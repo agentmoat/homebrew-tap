@@ -1,25 +1,25 @@
 class Moat < Formula
   desc "Policy checks for AI coding agents: decides allow, defer, ask or deny for every tool call from Claude Code, Codex and Cursor, configures Claude Code's and Codex's own OS sandboxes from the same policy, and keeps a local audit log."
   homepage "https://github.com/crocodile-labs/openmoat"
-  version "0.5.0"
+  version "0.5.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.0/openmoat-aarch64-apple-darwin.tar.xz"
-      sha256 "f489b9c5d9b624635bf75f82f792d70a808ef7d907eb8f723914073968146b5d"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.1/openmoat-aarch64-apple-darwin.tar.xz"
+      sha256 "d0f92e1197034365d7bc0855aa2a507ec464b33b91d27b3ad16f2f6ee93fec70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.0/openmoat-x86_64-apple-darwin.tar.xz"
-      sha256 "ab2f04d02a61fc71b4268d17113adeb733afddf93921202ebbe71eafa5bbbd4b"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.1/openmoat-x86_64-apple-darwin.tar.xz"
+      sha256 "9cd9e0728c20b771c03681ef5016cd0e6877b4f74f1a6a7642b9d83ece3e7a53"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.0/openmoat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7cbd4bc796d3b8174ad5e3bfefb85a40997acac822c7e21e2d06b013bf3974e7"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.1/openmoat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7064e70a2b4cdd32590725c2afe97ff294cb28faf5adc6769ca0e42e4de6a37b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.0/openmoat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e2a7af0c9589bb35c01c7ca7be4cb3f94d23afb6424e922d9585157e214871ee"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.5.1/openmoat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "739f573982a7bd551f7ba8df5004aec3c9ceae4b6d4ecee2bb9d410e472f5524"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
