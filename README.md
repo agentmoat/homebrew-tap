@@ -1,11 +1,15 @@
 # OpenMoat Homebrew tap
 
 Homebrew formulae for [OpenMoat](https://github.com/crocodile-labs/openmoat), security for AI
-coding agents by Crocodile Labs. The command it installs is `moat`.
+coding agents by Crocodile Labs. The command it installs is `openmoat`; `moat`, its name up to
+0.7.0, is installed beside it for a few releases.
 
 ```bash
-brew install crocodile-labs/tap/moat
+brew install crocodile-labs/tap/openmoat
 ```
+
+The formula was called `moat` up to 0.7.0. `formula_renames.json` points the old name at the
+new one, so `brew upgrade` moves an existing install across.
 
 The release workflow of `crocodile-labs/openmoat` writes the formulae in `Formula/` on every
 tagged release, so do not edit them by hand. Report problems in the
