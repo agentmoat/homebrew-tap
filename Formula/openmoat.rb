@@ -1,25 +1,25 @@
 class Openmoat < Formula
-  desc "Policy checks for AI coding agents: decides allow, defer, ask or deny for every tool call from Claude Code, Codex and Cursor, configures Claude Code's and Codex's own OS sandboxes from the same policy, and keeps a local audit log."
+  desc "Policy checks for AI coding agents: decides allow, defer, ask or deny for every tool call from Claude Code, Codex, Cursor, OpenClaw, GitHub Copilot CLI, pi and Gemini CLI, configures Claude Code's, Codex's and Cursor's own OS sandboxes from the same policy, and keeps a local audit log."
   homepage "https://github.com/crocodile-labs/openmoat"
-  version "0.9.0"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.9.0/openmoat-aarch64-apple-darwin.tar.xz"
-      sha256 "4223805177e1546f82fc0335f36c089d5d93ad7f426301e5896d8cbeafb2288d"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.10.0/openmoat-aarch64-apple-darwin.tar.xz"
+      sha256 "66bbd8a040479d17111efa01d357bd772aedd2c32bf097369c8f0f11a58165b3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.9.0/openmoat-x86_64-apple-darwin.tar.xz"
-      sha256 "461ebd689549530e7d9426ea959650ce5a1c42751f77e712894a008800a5394b"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.10.0/openmoat-x86_64-apple-darwin.tar.xz"
+      sha256 "951bb119610cd18d287328c427b274f1634bd9a69c4c55f0c35660e1b962a6fb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.9.0/openmoat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6d0c505c8b7a0bd4d827a9711f48d1d298d5b568bf8bd59ef2159b6cf3dd6e95"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.10.0/openmoat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "01f35b7fa4249b1e737cdd90fba709d3c4da18cb233075d959985b4b4a22b468"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.9.0/openmoat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7c292a0394a8a0dc5813902a76bfa83cd2dfa1ce80d76f59c499aa3c7f37751c"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.10.0/openmoat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b38218dfc3e57cfd2f26d90d47df67271165dda9875a64986b7655dafbf826bc"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
